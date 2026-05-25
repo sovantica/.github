@@ -6,7 +6,7 @@ We build the substrate AI agents run on — memory, reasoning scaffolds, verifia
 
 ## What we ship
 
-**[Engrava](https://github.com/sovantica/engrava)** — memory that dreams.
+**[Engrava](https://github.com/sovantica/engrava)** — the memory database for AI agents.
 
 An embedded cognitive graph database for AI agents. Graph memory (7 edge types), hybrid FTS5 + vector search, algorithmic dreaming (4-signal consolidation, 3 gates), tamper-evident audit trail. No Neo4j. No Redis. Just SQLite.
 
