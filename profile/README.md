@@ -14,7 +14,7 @@ An embedded cognitive graph database for AI agents. Graph memory (7 edge types),
 pip install engrava
 ```
 
-MIT licensed · [engrava.ai](https://engrava.ai) · [docs](https://engrava.ai/docs/)
+MIT licensed · [engrava.ai](https://engrava.ai) · [docs](https://engrava.ai/docs)
 
 ## How we work
 
