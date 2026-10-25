@@ -2,29 +2,32 @@
 
 **Cognitive infrastructure for AI agents.**
 
-We build the substrate AI agents run on — memory, reasoning scaffolds, verifiable state. Starting with the hardest part: memory that doesn't collapse under context-window limits, and that an agent can actually reason over.
+We build the substrate AI agents run on - memory, reasoning scaffolds, verifiable state. Starting with the hardest part: memory that doesn't collapse under context-window limits, and that an agent can actually reason over.
 
 ## What we ship
 
-**[Engrava](https://github.com/sovantica/engrava)** — the memory database for AI agents.
+**[Engrava](https://github.com/sovantica/engrava)** - the memory database for AI agents.
 
-An embedded cognitive graph database for AI agents. Graph memory (7 edge types), hybrid FTS5 + vector search, algorithmic dreaming (6-signal consolidation with configurable gates), tamper-evident thought/edge journal. No Neo4j. No Redis. Just SQLite.
+An in-process Python library over one SQLite file: a queryable memory graph with bi-temporal valid-time predicates, and no generative-model call in the core write path. Seven edge types, hybrid FTS5 + vector search, consolidation from six fixed signals, a SHA-256-linked thought/edge journal.
 
 ```bash
 pip install engrava
 ```
 
-MIT licensed · [engrava.ai](https://engrava.ai) · [docs](https://engrava.ai/docs)
+- **[engrava-mcp](https://github.com/sovantica/engrava-mcp)** - MCP server for Engrava, over stdio.
+- **[engrava-benchmark](https://github.com/sovantica/engrava-benchmark)** - runners and results; reproduce our [published numbers](https://engrava.ai/benchmarks/) against the package from PyPI.
+
+MIT licensed | [engrava.ai](https://engrava.ai) | [docs](https://docs.engrava.ai)
 
 ## How we work
 
 - **Code-first.** Every claim is backed by implementation. No whitepapers without running code.
-- **Research posture.** Grounded in consciousness research, not AI hype. Citations where it matters.
-- **Open by default.** MIT licensed, public roadmap, discussions over DMs.
+- **Research posture.** We draw on prior work in cognitive science, neuroscience and algorithms. Where we cite, we cite; where we deviate, we explain why.
+- **Open by default.** Primary artifacts ship under MIT; questions go to GitHub Discussions.
 
 ## Elsewhere
 
 - Studio: [sovantica.ai](https://sovantica.ai)
 - Engrava: [engrava.ai](https://engrava.ai)
 - Contact: [hello@sovantica.ai](mailto:hello@sovantica.ai)
-- Security: [security@sovantica.ai](mailto:security@sovantica.ai) — see [SECURITY.md](../SECURITY.md)
+- Security: [security@sovantica.ai](mailto:security@sovantica.ai), see [SECURITY.md](../SECURITY.md)
